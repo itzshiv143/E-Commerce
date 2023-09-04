@@ -1,2 +1,63 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 /* font-family: 'Ubuntu', sans-serif; */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+header{
+    background-color: rgb(231, 236, 245);
+    position: sticky;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 5px 15px grey;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    margin: auto ;
+    background-color: rgb(231, 236, 245);
+    width: 90%;
+    /* border: 2px solid red; */
+}
+
+
+.nav-list .list-item{
+    display: flex;
+    position: relative;
+}
+
+.nav-list .list-item li{
+    list-style: none;
+    padding: 0px 15px;
+    position: relative;
+}
+
+.nav-list .list-item li a{
+    text-decoration: none;
+    color: black;
+}
+
+.nav-list .list-item li a:hover,
+.nav-list .list-item li a.active{
+    color: rgb(21, 109, 68);
+}
+
+.nav-list .list-item li a.active::after,
+.nav-list .list-item li a:hover::after{
+    content: "";
+    background:rgb(21, 109, 68) ;
+    position: absolute;
+    height: 2px;
+    width: 30%;
+    left: 20px;
+    bottom: -4px;
+}
