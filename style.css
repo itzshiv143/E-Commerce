@@ -21,6 +21,7 @@ header{
 
 nav{
     display: flex;
+    position: sticky;
     justify-content: space-between;
     align-items: center;    
     margin: auto ;
@@ -60,4 +61,54 @@ nav{
     width: 30%;
     left: 20px;
     bottom: -4px;
+}
+
+
+/* HERO */
+
+.hero{
+    background-image: url("img/hero4.png");
+    height: 90vh;
+    width: 100%;
+    background-size: cover;   
+    background-position: right 0 top 25%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.text{
+    /* margin-top: 170px; */
+    margin-left: 70px;
+}
+
+.text h4{
+    font-size: 18px;
+    padding-bottom: 10px;
+}
+
+.text h1{
+    font-size: 40px;
+    font-weight: 350px;
+    padding-bottom: 12px;
+}
+
+.text h1 span{
+    color: rgb(21, 109, 68);
+}
+
+.text p{
+    font-size: 15px;
+    color: grey;
+    padding-bottom: 15px;
+}
+
+.text button{
+    border: none ;
+    background-image: url("img/button.png");
+    height: 50px;
+    width: 230px;
+    background-color: transparent;
+    color: rgb(21, 109, 68);
 }
