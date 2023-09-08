@@ -30,15 +30,25 @@ h3{
 }
 
 h4{
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     /* font-size: 25px; */
+}
+
+h5{
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+span{
+    font-weight: bold;
 }
 
 p{
     font-size: 15px;
     margin: 0;
     padding: 0;
+    color: grey
 }
 
 body{
@@ -530,4 +540,83 @@ nav{
     border-radius: 0px 5px 5px 0px;
     cursor: pointer;
     font-size: bold;
+}
+
+
+#footer{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 50px;
+    height: 350px;
+}
+
+
+.foot-contact h5{
+    margin: 15px 0px;
+}
+
+.foot-contact div{
+    display: flex;
+}
+
+.foot-contact div p{
+    margin-left: 5px;
+}
+
+.foot-contact .follow a i{
+    padding: 0px 3px;
+    font-size: 20px;
+    color: rgb(70, 70, 70);
+}
+
+.foot-contact .follow a{
+    text-decoration: none !important;
+}
+
+
+.foot-about h5{
+    margin-bottom: 20px;
+}
+
+.foot-about p a{
+    text-decoration: none;
+    color: grey;
+}
+
+
+.foot-account h5{
+    margin-bottom: 20px;
+}
+
+.foot-account p a{
+    text-decoration: none;
+    color: grey;
+}
+
+
+.foot-payment h5{
+    margin-bottom: 20px;
+}
+
+.foot-payment p a{
+    color: grey;
+    text-decoration: none;
+    margin:8px 0px;
+}
+
+.foot-payment a img{
+    border: 2px solid rgb(21, 109, 68);
+    border-radius: 5px;
+}
+
+.foot-payment .pay{
+    border: none !important;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
 }
