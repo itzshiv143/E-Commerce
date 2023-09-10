@@ -70,38 +70,48 @@ header{
 nav{
     display: flex;
     position: sticky;
+    top: 0;
+    left: 0;
     justify-content: space-between;
     align-items: center;    
     margin: auto ;
-    background-color: rgb(231, 236, 245);
-    width: 90%;
+    width: 100%;
+    height: 60px;
+    padding: 0px 50px;
     /* border: 2px solid red; */
 }
 
 
-.nav-list .list-item{
+
+#mobile{
+    display: none;
+    align-items: center;
+}
+
+
+#navbar{
     display: flex;
     position: relative;
 }
 
-.nav-list .list-item li{
+#navbar li{
     list-style: none;
     padding: 0px 15px;
     position: relative;
 }
 
-.nav-list .list-item li a{
+#navbar li a{
     text-decoration: none;
     color: black;
 }
 
-.nav-list .list-item li a:hover,
-.nav-list .list-item li a.active{
+#navbar li a:hover,
+#navbar li a.active{
     color: rgb(21, 109, 68);
 }
 
-.nav-list .list-item li a.active::after,
-.nav-list .list-item li a:hover::after{
+#navbar li a.active::after,
+#navbar li a:hover::after{
     content: "";
     background:rgb(21, 109, 68) ;
     position: absolute;
@@ -168,6 +178,8 @@ nav{
     /* border: 2px solid black; */
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
     margin-top: 50px;
     margin-bottom: 50px;
 }
@@ -619,4 +631,39 @@ footer{
     justify-content: center;
     align-items: center;
     margin-bottom: 30px;
+}
+
+
+@media (max-width: 768px) {
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        width: 300px;
+        height: 100vh;
+        background-color: aliceblue;
+        box-shadow: 0px 0px 8px rgba(128, 128, 128, 0.466) ;
+        padding: 80px 0px 0px 10px;
+    }
+
+    #navbar.active{
+        right: 0px;
+    }
+
+    #navbar li {
+        margin-bottom: 25px;
+    }
+    #mobile{
+        display: flex;
+        align-items: center;
+    }
+    #mobile i{
+        color: black;
+        padding-left: 20px;
+        font-size: 24px;
+    }
 }
