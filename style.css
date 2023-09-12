@@ -707,3 +707,78 @@ footer{
     font-weight: 600;
     margin: 0px 5px;
 }
+
+#pro-details{
+    padding: 0px 5%;
+    margin: 80px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#pro-details .single-pro-img{
+    width: 40%;
+    margin-right: 50px;
+}
+
+.small-img-grup{
+    display: flex;
+    justify-content: space-between;
+}
+
+.small-img-col{
+    flex-basis: 24%;
+    cursor: pointer;
+}
+
+.single-pro-detail{
+    width: 55%;
+    padding: 20px 0px;
+}
+
+.single-pro-detail p{
+    font-weight: 600;
+    font-size: 15px;
+    color: black;
+    margin-bottom: 30px;
+}
+
+.single-pro-detail h4{
+    font-size: 22px;
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 30px;
+
+}
+
+.single-pro-detail select{
+    display: block ;
+    color: grey;
+    padding: 3px 5px;
+    margin-bottom: 10px;
+}
+
+.single-pro-detail input{
+    width: 37px;
+    height: 37px;
+    text-align: center;
+    font-size: 18px;
+    color: grey;
+    margin-right: 7px;
+}
+
+.single-pro-detail button{
+    background-color: rgb(21, 109, 68);
+    color: white;
+    height: 37px;
+    padding: 0px 15px;
+    border: none !important;
+    border-radius: 5px;
+    cursor: pointer ;
+    margin-bottom: 50px;
+}
+
+.single-pro-detail .para{
+    color: grey;
+    width: 550px;
+    font-size: 17px;
+}
