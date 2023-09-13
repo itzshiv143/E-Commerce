@@ -782,3 +782,71 @@ footer{
     width: 550px;
     font-size: 17px;
 }
+
+/* about page  */
+
+.about-hero{
+    background-image: url('img/about/banner.png');
+    height: 250px;
+    background-size: cover !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-hero h1{
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+.about-hero p{
+    color: white;
+    text-align: center;
+}
+
+#about-head{
+    display: flex;
+    padding: 50px 5%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#about-head img{
+    width: 44%;
+}
+
+#about-head div{
+    padding: 0px 0px 0px 50px;
+}
+
+
+#about-head div h2{
+    margin-bottom: 20px;
+}
+
+
+#about-head div p{
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+
+#about-app{
+    padding: 50px 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#about-app .video{
+    width: 70%;
+    margin-top: 20px;
+    height: 100%;
+}
+
+#about-app .video video{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
